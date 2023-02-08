@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLICAÇÃO WEB</title>
+
+    <!--ESTILIZAÇÃO DENTRO DO HTML, OBJETIVO DE CRIAR UMA
+    BORDAR -->
+    <STYLE>
+        #div{
+            background-color: antiquewhite;
+            width: 500PX;
+            HEIGTH:800PX;
+            PADDING:200PX;
+            BORDER: 1PX SOLID GREEN;
+        }
+    </STYLE>
+
+<!--FUNÇÃO NO SCRIPT-->
+    <SCRIPT>
+        FUNCTION ALLOWDROP(EV) {
+            EV.PREVENTDEFAULT();
+        };
+
+        FUNCTION DRAG(EV) {
+            EV.DATATRANSFER.SETDATA("TEXT", EV.TARGET.ID);
+        };
+
+        FUNCTION DROP(EV) {
+            AV.PREVENTDEFAULT();
+            VAR DATA = EV.DATATRANSFER.GETDATA)("TEXT");
+            EV.TARGET.APPENDCHILD(DOCUMENT.GETELEMENTBYID(DATA));}
+        }
+
+    /**/
+    </SCRIPT>
+</head>
+
+<BODY>
+    <P>ARRASTE A IMAGEM PARA DENTRO DO RETANGULO</P>
+    <DIV ID="DIV1" ONDROP="DROP(EVENT)" ONDRAGOVER="ALLOWDROP(EVENT)"></DIV>
+    <BR>
+    <BR>
+        <IMG ID = "DRAG1" SRC="IMG/1a46453c7deeb74b5f78a67965cd436d.jpg" DRAGGABLE="TRUE" ondragstart="DRAG(EVENT)"
+        width="336" height="69">
+</BODY>
+</html>
