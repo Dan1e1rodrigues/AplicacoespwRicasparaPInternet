@@ -8,18 +8,22 @@
 
     <!--ESTILIZAÇÃO DENTRO DO HTML, OBJETIVO DE CRIAR UMA
     BORDAR -->
+
+    <!--Aqui e meu quadrado aonde irei colocar minha imagem, no caso arrastar ela. -->
     <STYLE>
-        #div{
-            background-color: antiquewhite;
-            width: 500PX;
-            HEIGTH:800PX;
+        div{
+            background-color: rgb(7, 58, 15);
+            width: auto;
+            height:auto;
             PADDING:200PX;
-            BORDER: 1PX SOLID GREEN;
+            BORDER: 1PX SOLID rgb(12, 14, 12);
         }
     </STYLE>
 
-<!--FUNÇÃO NO SCRIPT-->
+<!--FUNÇÃO NO SCRIPT
+    Aqui temos uma função que faz com que eu consiga arrastar a imagem para dentro do quadro. -->
     <SCRIPT>
+
         FUNCTION ALLOWDROP(EV) {
             EV.PREVENTDEFAULT();
         };
@@ -31,19 +35,19 @@
         FUNCTION DROP(EV) {
             AV.PREVENTDEFAULT();
             VAR DATA = EV.DATATRANSFER.GETDATA)("TEXT");
-            EV.TARGET.APPENDCHILD(DOCUMENT.GETELEMENTBYID(DATA));}
-        }
+            EV.TARGET.APPENDCHILD(DOCUMENT.GETELEMENTBYID(DATA));
+        };
 
-    /**/
     </SCRIPT>
 </head>
 
+<!--Dentro desse body esta a imagem e o texto que irei arrastar. -->
 <BODY>
     <P>ARRASTE A IMAGEM PARA DENTRO DO RETANGULO</P>
-    <DIV ID="DIV1" ONDROP="DROP(EVENT)" ONDRAGOVER="ALLOWDROP(EVENT)"></DIV>
+    <DIV ID="div1" ONDROP="DROP(EVENT)" ONDRAGOVER="ALLOWDROP(EVENT)"></DIV>
     <BR>
     <BR>
-        <IMG ID = "DRAG1" SRC="IMG/1a46453c7deeb74b5f78a67965cd436d.jpg" DRAGGABLE="TRUE" ondragstart="DRAG(EVENT)"
-        width="336" height="69">
+        <IMG ID = "DRAG" SRC="https://designe.com.br/wp-content/uploads/2021/06/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" DRAGGABLE="TRUE" ondragstart="DRAG(EVENT)"
+        width="336" height="350">
 </BODY>
 </html>
