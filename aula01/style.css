@@ -1,9 +1,10 @@
 body{
-    background-color:rgb(153, 153, 250);
+    background-color:rgb(26, 215, 29);
 }
 #div{
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
+    width: 750px;
+    height: 100px;
+    padding: 30px;
+    border: 3px solid rgb(60, 24, 178);
+    background-color: blue;
 }
