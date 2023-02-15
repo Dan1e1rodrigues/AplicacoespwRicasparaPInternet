@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allowDrop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    <p>arraste a imagem para dentro do retângulo</p>
+
+    <img  id="drag1" src="IMG/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+</body>
+<script src="index.js"></script>
+</html>
