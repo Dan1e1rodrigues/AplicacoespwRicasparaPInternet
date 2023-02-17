@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade (DROP).</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<!--Atividade, a seguir configure uma imagem para estar dentro da primeira div (a que 
+    esta acima da página)-->
+    
+<body>
+
+    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
+    <p>Arraste a imagem para o retangulo acima</p>
+
+    <img id="drag1" src="https://media.zenfs.com/pt/olhar_digital_646/b6bfa10cc5ddc0ae877e4baef7735090" draggable="true" ondragstart="drag(event)" width="336" height="180">
+
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+</body>
+<script src="index.js"></script>
+</html>
