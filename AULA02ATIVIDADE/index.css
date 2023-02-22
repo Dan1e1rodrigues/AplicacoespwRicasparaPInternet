@@ -2,10 +2,20 @@ body{
     background-color:rgb(87, 53, 23);
 }
 #div{
-    width: 750px;
+    display: flex1;
+    width: 350px;
     height: 200px;
-    padding: 30px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     background-color: rgb(195, 195, 207);
+}
+
+#central{
+    display: flex;
+}
+
+#drag1{
+    display: block ;
+    margin: auto;
+    padding-top: 25px;
 }
 
