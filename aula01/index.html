@@ -11,11 +11,15 @@
 
 <body>
     <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> <img  id="drag1" src="IMG/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" data-peso="20" draggable="true" ondragend="drag()" draggable="true" ondragstart="drag(event)" width="336" height="109"></div>
     <p>Segure a imagem e arraste ela para dentro do retangulo  azul</p>
 
-    <img  id="drag1" src="IMG/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <p>O peso das suas compras é: <span id = "pesoTotal">0 kg </span></p>
 </body>
+
+
 <script src="index.js"></script>
 </html>

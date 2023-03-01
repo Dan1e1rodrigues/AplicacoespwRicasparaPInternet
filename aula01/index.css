@@ -1,7 +1,7 @@
 body{
-    background-color:rgb(26, 215, 29);
+    background-color:rosybrown;
 }
-#div{
+#div,#div2{
     width: 750px;
     height: 100px;
     padding: 30px;
