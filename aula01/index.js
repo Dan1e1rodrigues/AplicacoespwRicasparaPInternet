@@ -1,3 +1,5 @@
+var pesoTotal = 0;
+
 function allowDrop(ev){
     ev.preventDefault(); //não deixar o navegador arrastar os objetos
 
@@ -23,23 +25,29 @@ function drop(ev){
     ev.target.appendChild(document.getElementById(data));
     
 
-var pesoTotal = 0;
+//inicio
 
 if(ev.target.id === "div2"){ 
-    pesoTotal += parseInt(event.target.childNodes [0].getAttribute("data-peso"));
-}else if(ev.target.id === "div1")
-    pesoTotal -= parseInt(event.target.childNodes [0].getAttribute("data-peso"));
+    pesoTotal += parseInt(ev.target.childNodes [0].getAttribute("data-peso"));
+}
+else if(ev.target.id === "div1")
+    pesoTotal -= parseInt(ev.target.childNodes [0].getAttribute("data-peso"));
 
 //exibir o peso total na página 
-document.getElementById("pesoTotal").innerHTML = pesoTotal + "KG"
+document.getElementById("pesoTotal").innerHTML = pesoTotal + "kg"
 }
 
 function dragEnd(ev){
-    if(ev.target.parentNode.id != "div2"){
+    if(ev.target.parentNode.id != "div2") {
         //subtarir o peso da imagem ao peso total
         pesoTotal -= parseInt(ev.target.getAttribute("data-peso"));
 
         //exibir o peso tptal na pagina
-        document.getElementById("pesoTotal").innerHTML = pesoTotal + "KG"
+        document.getElementById("pesoTotal").innerHTML = pesoTotal + "kg"
+    }
+        else if(ev.target.parentNode.id != "div1") {
+            pesoTotal += parseInt(ev.target.getAttribute("data-peso"));
+            document.getElementById("pesoTotal").innerHTML = pesoTotal + "kg"
     }
 }
+

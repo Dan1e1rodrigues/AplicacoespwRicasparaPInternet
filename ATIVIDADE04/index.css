@@ -1,0 +1,13 @@
+body{
+    background-color: burlywood;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+   }
+   #div1,#div2{
+       width: 350px;
+       height: 200px;
+       padding: 10px;
+       border: 7px solid white;
+       background-color: rgb(2, 2, 128);
+   }

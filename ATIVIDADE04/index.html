@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <p>Arraste a imagem para dentro do retangulo que voce quiser:</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="https://64.media.tumblr.com/2ea08ddb9a7a9a32da4e70864bf5e5d0/2c411d86aef28d01-cb/s540x810/393ad6ba43e90b4c7083fab0eef90bd7f07bf061.gif" data-peso="20" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)"
+    width="300" height="200">
+    </div>
+    <br>
+    <br>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <br>
+
+    <p>o peso total de sua compra é: <span id="pesoTotal">0 Kg</span></p>
+</body>
+    <script src="index.js"></script>
+</html>
