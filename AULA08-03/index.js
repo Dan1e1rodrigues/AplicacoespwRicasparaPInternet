@@ -16,6 +16,6 @@ localStorage.setItem("Nome", nome);
 
 //Se ao inves de apresentar a key em uma janela alert, quiser apresentar na pagina, podemos usar o documento 
 
-document.write("O seu nome é: " + nome + "");
+// document.write("O seu nome é: " + nome + "");
 
 
