@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade localStorage</title>
+</head>
+<body>
+    
+    <form name = "dados">
+        <label>Nome</label><br>
+        <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        <label>Cor fundo:</label><br>
+        <input type="radio" name="fcorf" onclick="defineCor(1,'#f00')">Vermelho<br>
+        <input type="radio" name="fcorf" onclick="defineCor(1,'#0f0')">Verde<br>
+        <input type="radio" name="fcorf" onclick="defineCor(1,'#00f')">Azul<br><br>
+        <label>Cor de texto:</label><br>
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#000')">Preto<br>
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#fff')">Branco<br>
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#ff0')">Amarelo<br><br>
+        <input type="button" value="gravar" onclick="gravar()"><br>
+    </form>
+
+    <script src="index1.js"></script>
+</body>
+</html>
