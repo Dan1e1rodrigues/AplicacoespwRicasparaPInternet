@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela de Dados pessoias</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+    </style>
 </head>
 <body>
+
     <form action ="/action_page.php">
         <fieldset>
+
+            <!--Criar um quadrado com um texto contido entre as linhas-->
             <legend>Dados:</legend>
+
             <!--Dados nome-->
             <label for="nome">Nome</label><br>
-            <input type="text" id="nome" >
+            <!--Input de tipo, iremos conter dados, que são eles númericos, textos e até mesmo de senhas-->
+            <input type="text" id="nome">
+            <!--Esse ID serve para salvar os dados digitados por exemplo, caso eu digite um nome
+            ele ira sarvar na proxima sessão.-->
             <br><br>
 
             <!--Sobrenome-->
@@ -20,23 +32,35 @@
             <input type="text" id="sobrenome" >
             <br><br>
 
+            <!--CPF-->
             <label for="cpf">CPF</label><br>
             <input type="text" id="cpf" >
             <br><br>
 
+            <!--Número de dependentes-->
             <label for="numdep">Números de Dependentes</label><br>
             <input type="number" id="numdep" >
             <br><br>
 
-            <label for="email">Email</label><br>
+            <!--E-mail-->
+            <label for="email">E-mail</label><br>
             <input type="email" id="email" >
             <br><br>
 
+            <!--Data-->
             <label for="data">Data</label><br>
-            <input type="date" id="nome" >
+            <input type="date" id="data" >
             <br><br>
 
+            <!--Botão de enviar
+            Estou criando-->
+            <button>
+            <label for="enviar"><a href="indexpag.html">Enviar</a></label>
+            </button>
+            
         </fieldset>
+
     </form>
 </body>
 </html>
+
