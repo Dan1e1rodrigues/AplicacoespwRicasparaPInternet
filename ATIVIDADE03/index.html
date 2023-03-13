@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<!--Atividade, a seguir configure uma imagem para estar dentro da primeira div (a que 
-    esta acima da página)-->
+                                            <!--EXERCICIO-->
+<!--01 A seguir configure uma imagem para estar dentro da primeira div (a que esta acima da página)-->
     
 <body>
 
-    <!--JHFEIFJSIEJFISJDFIJ-->
-    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
+    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp sprite este elemento div-->
 <div id="divmaior">
 
     <div id="central">
 
-        <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> <img id="drag1" src="https://media.giphy.com/media/10ZuedtImbopos/giphy.gif" draggable="true" ondragstart="drag(event)" width="300" height="150"></div>
+        <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+
+            <!--Imagem que esta contida dentro do vento drop-->
+            <img id="drag1" src="https://media.giphy.com/media/10ZuedtImbopos/giphy.gif" draggable="true" ondragstart="drag(event)" width="300" height="150">
+            
+        </div>
 
         <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
@@ -38,6 +42,11 @@
         <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
 
         <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
+        <!-- <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="https://giphy.com/clips/anime-queen-demon-slayer-0YqqS9Nize8tKxfSWV" draggable="true" ondragstart="drag(event)" width="300" height="150"> </div> -->
+
+        <!--Caso eu queira adicionar outra imagem e necessario configurar outra div e com o mesmo evento drop
+        para que assim, possamos ter duas imagens diferentes que eu possa movimentar.-->
 
     </div>
 </div>
