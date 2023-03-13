@@ -5,16 +5,15 @@ function allowDrop(ev){
 
 }
 
-//função arrasta, inicia um arrasto de elemento.
+//função arrasta, inicia um movimento de elemento.
 
-//Setdata é um método pra escrever um dado.
+//Setdata é um método para escrever um dado.
 
-//dataTransfer, funcionalidades, transferencia de daddos.
+//dataTransfer, funcionalidades, transferencia de dados.
 
 //set é escrever, arrastar
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-
 }  
 
 //drop vai soltar na div

@@ -1,6 +1,7 @@
-
+    <!--HTML padrão da página-->
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!--HTML de cabeçario basico-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,26 @@
 </head>
 
 <body>
-    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> <img  id="drag1" src="IMG/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" data-peso="20" draggable="true" ondragend="drag()" draggable="true" ondragstart="drag(event)" width="336" height="109"></div>
-    <p>Segure a imagem e arraste ela para dentro do retangulo  azul</p>
-
     
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastado, este elemento div-->
 
-    <p>O peso das suas compras é: <span id = "pesoTotal">0 kg </span></p>
+        <!--Aqui esta contido a função Dragover que faz com que solte a imagem "item contido"
+        dentro da div-->
+
+        <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+
+            <!--Dentro temos uma  imagem, que será arrastada-->
+            <img  id="drag1" src="IMG/dark-deku-izuku-midoriya-boku-no-hero-academia-bnha-mha-my-hero-academia-317.jpg" data-peso="20" draggable="true" ondragend="drag()" draggable="true" ondragstart="drag(event)" width="336" height="110">
+
+        </div>
+
+    <!--Texto de instrução do que fazer-->
+    <p>Segure a imagem e arraste ela para dentro do retangulo azul</p>
+
+        <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
 </body>
 
-
+<!--Link do Script com html-->
 <script src="index.js"></script>
 </html>
