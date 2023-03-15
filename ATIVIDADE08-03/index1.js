@@ -1,4 +1,8 @@
+// Variaveis para cor,fundo e nome
 var vcorfundo, vcorfonte, vnome
+
+// Função para definir a cor, foi utilizado o "if e o else" 
+
 function defineCor(op,cor){
     // se op for igual a 1 alterna a cor de fundo
     if(op==1){

@@ -1,5 +1,6 @@
 function allowDrop(ev){
-    ev.preventDefault(); //não deixar o navegador arrastar os objetos
+    ev.preventDefault(); 
+    //não deixar o navegador arrastar os objetos.
 
 }
 
@@ -7,7 +8,7 @@ function allowDrop(ev){
 
 //Setdata é um método pra escrever um dado.
 
-//dataTransfer, funcionalidades, transferencia de daddos.
+//dataTransfer, funcionalidades, transferencia de dados.
 
 //set é escrever, arrastar
 function drag(ev) {

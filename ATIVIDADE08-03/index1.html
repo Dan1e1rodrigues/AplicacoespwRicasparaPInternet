@@ -16,25 +16,33 @@
 
         <!-- Depois criaremos os input de "radio" que gera uma bolinha de check -->
         <label>Nome</label><br>
-        <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        <input type="text" name="fnome" id="fnome" size="17"><br><br>
 
         <!-- Botoes de cor de fundo -->
         <label>Cor fundo:</label><br>
         <input type="radio" name="fcorf" onclick="defineCor(1,'#f00')">Vermelho<br>
         <input type="radio" name="fcorf" onclick="defineCor(1,'#0f0')">Verde<br>
-        <input type="radio" name="fcorf" onclick="defineCor(1,'#00f')">Azul<br><br>
+        <input type="radio" name="fcorf" onclick="defineCor(1,'#00f')">Azul<br>
+        <!-- Essa e a sintaxe para criar uma cor de fundo nova e é bom relembrar que
+        defineCor(1,... deve ser 1 pois esta e a ordem, primero fundo depois cor
+        esta mais para organização. -->
+        <input type="radio" name="fcorf" onclick="defineCor(1,'#402b01')">Marrom<br><br>
 
         <!-- Botoes de cor de texto -->
         <label>Cor de texto:</label><br>
         <input type="radio" name="fcorT" onclick="defineCor(2,'#000')">Preto<br>
         <input type="radio" name="fcorT" onclick="defineCor(2,'#fff')">Branco<br>
-        <input type="radio" name="fcorT" onclick="defineCor(2,'#ff0')">Amarelo<br><br>
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#ff0')">Amarelo<br>
+
+        <!-- Já na de texto e um pouco direfente, pois ela altera outro campo que e o texto,
+        para ela o defineCor(2,... deve ser 2 pois seleciona apenas a cor dos textos e não do fundo. -->
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#96c259')">Abacate<br>
 
         <!-- Input com o tipo button que irá gravar os dados -->
         <!-- Para confirmar, basta inspecionar os dados no navegador com a ferramenta "INSPECIONAR Ou INSPECT" -->
 
         <input type="button" value="gravar" onclick="gravar()"><br>
-        
+
     </form>
 
     <script src="index1.js"></script>
