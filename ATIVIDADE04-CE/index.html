@@ -1,3 +1,4 @@
+<!-- Atividade de Arrastar e soltar imagem, porém essa muda o peso do elemento -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,6 +15,7 @@
 
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 
+        <!-- Função drop, Contida com a imagem (gif, imagem ou texto) -->
         <img id="drag1" src="https://64.media.tumblr.com/2ea08ddb9a7a9a32da4e70864bf5e5d0/2c411d86aef28d01-cb/s540x810/393ad6ba43e90b4c7083fab0eef90bd7f07bf061.gif" data-peso="20" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)"
         width="300" height="200">
         
@@ -21,7 +23,11 @@
     <br>
     <br>
 
+        <!-- Segunda função drop nessa não possue nenhuma imagem dentro dela, mas recebe o objeto, que pode 
+        receber um valor de KG que vai almentando ou diminuindo dependendo do objeto selecionado -->
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    
     <br>
     <br>
 

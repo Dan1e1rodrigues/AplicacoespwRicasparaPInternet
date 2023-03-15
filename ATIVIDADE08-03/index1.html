@@ -1,25 +1,40 @@
+<!-- Atividade que altera a edição da página como fundo e cor de texto -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade localStorage</title>
+    <title>localStorage</title>
 </head>
 <body>
     
+    <!-- Computa os dados de primeira temos uma caixa de texto que recebe um nome -->
+
+    <!-- form onde será contido nossos dados -->
     <form name = "dados">
+
+        <!-- Depois criaremos os input de "radio" que gera uma bolinha de check -->
         <label>Nome</label><br>
         <input type="text" name="fnome" id="fnome" size="20"><br><br>
+
+        <!-- Botoes de cor de fundo -->
         <label>Cor fundo:</label><br>
         <input type="radio" name="fcorf" onclick="defineCor(1,'#f00')">Vermelho<br>
         <input type="radio" name="fcorf" onclick="defineCor(1,'#0f0')">Verde<br>
         <input type="radio" name="fcorf" onclick="defineCor(1,'#00f')">Azul<br><br>
+
+        <!-- Botoes de cor de texto -->
         <label>Cor de texto:</label><br>
         <input type="radio" name="fcorT" onclick="defineCor(2,'#000')">Preto<br>
         <input type="radio" name="fcorT" onclick="defineCor(2,'#fff')">Branco<br>
         <input type="radio" name="fcorT" onclick="defineCor(2,'#ff0')">Amarelo<br><br>
+
+        <!-- Input com o tipo button que irá gravar os dados -->
+        <!-- Para confirmar, basta inspecionar os dados no navegador com a ferramenta "INSPECIONAR Ou INSPECT" -->
+
         <input type="button" value="gravar" onclick="gravar()"><br>
+        
     </form>
 
     <script src="index1.js"></script>
