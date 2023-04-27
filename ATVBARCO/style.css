@@ -1,0 +1,13 @@
+
+body{
+    margin: 0px;
+    /* background-color: blue; */
+}
+svg{
+    background-color: rgb(58, 44, 121);
+}
+
+.roupa{
+    position: relative;
+    right: 100px;
+}
