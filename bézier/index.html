@@ -7,8 +7,30 @@
     <title>Bézier</title>
 </head>
 <body>
-    <svg width="100px" height="100px">
-        <path d="M 10 80">
-    </svg>
+  
+
+    <svg width="200" height="200" >
+
+
+        <path d="M 10 80 Q 95 10 180 80" stroke="black" fill="transparent" />
+      </svg>
+      
+      
+      As coordenadas relativas são especificadas em relação ao ponto final do segmento anterior. 
+      
+      Para usar coordenadas relativas nos comandos de caminho SVG,  deve-se usar letras minúsculas para os comandos, ou seja, "m" e "q" em vez de "M" e "Q".
+      
+      Exemplo:
+      <svg width="200" height="200">
+        <path d="m 10 80 q 85 -70 170 0" stroke="black" fill="transparent" />
+      </svg>
+      
+      
+      "m 10 80": Move o ponto inicial do caminho para as coordenadas (10, 80). O primeiro comando "m" ou "M" sempre funciona como coordenadas absolutas.
+      "q 85 -70 170 0": Desenha a curva quadrática de Bézier com coordenadas relativas. 
+      O ponto de controle é agora:
+      (10 + 85, 80 - 70) = (95, 10)
+       e o ponto final é:
+       (10 + 170, 80 + 0) = (180, 80)
 </body>
 </html>
