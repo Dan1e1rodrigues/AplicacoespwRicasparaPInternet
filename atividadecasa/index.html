@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,60 @@
     <title>Casa</title>
 </head>
 <body>
-    
+
+    <svg width="1000px" height="1000px">
+
+        <path d="M 0 300 Q 200 100, 400 300 Q 600 50, 800 300" fill="#8DBF67" />
+        <!-- Casa -->
+        <rect 
+        x="330"
+        y="170"
+        width="130"
+        height="130"
+        fill="red"
+        rx="0"
+        fill-opacity="2"
+        ></rect>
+
+        <!-- sol 30 -->
+        <circle
+        cx="750"
+        cy="100"
+        r="50"
+        fill="yellow"
+        stroke-width="1"></circle>
+
+        <!-- Telhado -->
+        <polygon
+        points="323,183 470,182 400,38">
+        </polygon>
+
+        <!-- Porta -->
+        <rect 
+        x="375"
+        y="230"
+        width="40"
+        height="70"
+        fill="black"
+        rx="0"
+        fill-opacity="2"
+        ></rect>
+
+        <!-- Arvore -->
+        <rect 
+        x="175"
+        y="230"
+        width="40"
+        height="70"
+        fill="brown"
+        rx="0"
+        fill-opacity="2"
+        ></rect>
+
+        <!-- Folhas arvore -->
+        <path d="M 10 100 C 50 20, 70 10, 200 180 S 20 190 10 200" fill="green"></path>
+
+        <path d="M 290 350 q 100 100 200 0" stroke="black" fill="transparent" />
+    </svg>
 </body>
 </html>
