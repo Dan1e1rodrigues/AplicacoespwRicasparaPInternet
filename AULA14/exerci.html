@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<script>
+    function desenhar() {
+        var figura = document.querySelector("#minhaTela");
+        //testando se o Canvas existe na página HTML
+        if (figura.getContext) {
+            //se existir, vamos criar um retângulo
+            var onibus = figura.getContext("2d");
+            var linha = figura.getContext("2d");
+            var janela1 = figura.getContext("2d");
+            var janela2 = figura.getContext("2d");
+            var circulo1 = figura.getContext("2d");
+            var circulo2 = figura.getContext("2d");
+            let ctx = figura.getContext('2d');
+
+        }
+
+
+        function animarCirculos(tempo) {
+
+            circulo1.clearRect(0, 0, figura.width, figura.height);
+            onibus.fillStyle = "red";
+            onibus.fillRect(50, 50, 600, 200); //(x,y,width,height)
+
+            janela1.fillStyle = "blue";
+            janela1.fillRect(90, 80, 50, 100); //(x,y,width,height)
+
+            janela2.fillStyle = "blue";
+            janela2.fillRect(200, 80, 350, 60); //(x,y,width,height)
+
+            //ANIMACAO
+            circulo1.beginPath();
+            circulo1.fillStyle = "black";
+
+            circulo1.arc(200, 250, 50 + 15 * Math.sin(tempo / 200), 0, 2 * Math.PI);
+            circulo1.fill();
+            circulo1.stroke();
+
+            circulo2.fillStyle = "black";
+            circulo2.beginPath();
+            circulo2.arc(450, 250, 50 + 15 * Math.sin(tempo / 200), 0, 2 * Math.PI);
+            circulo2.fill();
+            circulo2.stroke();
+
+            linha.lineWidth = 4; //TAM
+            linha.strokeStyle = "black";
+            linha.moveTo(50, 250); //início da linha
+            linha.lineTo(50, 50); //início da linha
+            linha.lineTo(600, 50); //fim dessa linha
+            linha.lineTo(600, 250);
+            linha.lineTo(50, 250);
+            linha.stroke();
+    
+
+            requestAnimationFrame(animarCirculos);
+        }
+        requestAnimationFrame(animarCirculos);
+
+
+    }
+    window.onload = desenhar;
+</script>
+
+<body>
+    <canvas id="minhaTela" height="500" width="600"></canvas>
+</body>
+
+</html>
